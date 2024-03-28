@@ -124,6 +124,34 @@ footer {
     background-color: var(--tertiary);
 }
 
+.amenazas {
+    border: 2px solid red;
+    border-radius: 8px;
+    align-content: center;
+}
+
+.amenazas strong {
+    color: red;
+}
+
+.amenazas ul{
+    list-style: disc;
+}
+
+.amenazas li::marker{
+    color: red;
+}
+
+.soluciones {
+    border: 2px solid green;
+    border-radius: 8px;
+    align-content: center;
+}
+
+.soluciones strong {
+    color: green;
+}
+
 /* Media Query */
 @media screen and (min-width: 768px) {
     h1 {
