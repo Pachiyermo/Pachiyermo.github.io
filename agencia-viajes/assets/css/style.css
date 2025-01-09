@@ -256,3 +256,13 @@ ul {
     background-color: var(--primary);
     color: var(--light);
 }
+
+section.map path{
+    fill: var(--primary);
+    stroke: var(--hover);
+}
+
+section.map path:hover{
+    fill: var(--hover);
+    stroke: var(--primary);
+}
