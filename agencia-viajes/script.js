@@ -36,3 +36,8 @@ popupOverlay.addEventListener('click', () => {
   popup.style.display = 'none';
   popupOverlay.style.display = 'none';
 });
+
+function reload() {
+  windoy.location.href.split('?')[0];
+  window.location.reload();
+}
