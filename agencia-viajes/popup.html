@@ -19,7 +19,7 @@
       z-index: 1000;
       text-align: center;
     }
-    .popup-overlay {
+    .popup__overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -29,7 +29,7 @@
       background: rgba(0, 0, 0, 0.5);
       z-index: 999;
     }
-    .popup button {
+    .popup__close {
       margin-top: 10px;
       padding: 5px 10px;
       cursor: pointer;
@@ -38,25 +38,25 @@
 </head>
 <body>
   <h1>Formulario con Popup</h1>
-  <form id="myForm">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+  <form id="form" class="form">
+    <label for="nombre" class="form__label">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" class="form__input" required><br><br>
     
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required><br><br>
+    <label for="email" class="form__label">Correo electrónico:</label>
+    <input type="email" id="email" name="email" class="form__input" required><br><br>
     
-    <label for="fecha">Fecha de nacimiento:</label>
-    <input type="date" id="fecha" name="fecha" required><br><br>
+    <label for="fecha" class="form__label">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" name="fecha" class="form__input" required><br><br>
     
-    <button type="submit">Enviar</button>
+    <button type="submit" class="form__button">Enviar</button>
   </form>
 
   <!-- Popup -->
-  <div class="popup-overlay" id="popupOverlay"></div>
-  <div class="popup" id="popup">
-    <h2>Información del Formulario</h2>
-    <p id="popupContent"></p>
-    <button id="closePopup" onclick="reload()">Cerrar</button>
+  <div id="popup__overlay" class="popup__overlay"></div>
+  <div id="popup" class="popup">
+    <h2 class="popup__title">Información del Formulario</h2>
+    <p id="popup__content" class="popup__content"></p>
+    <button id="popup__close" class="popup__close" onclick="reload()">Cerrar</button>
   </div>
 
   <script src="./script.js"></script>
