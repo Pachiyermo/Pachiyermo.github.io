@@ -242,6 +242,10 @@ ul {
     /* Cambia el color del texto al pasar el ratón */
 }
 
+.card__button {
+    padding: 1.25rem 0;
+}
+
 /* Button Styles */
 .button {
     max-width: 10rem;
