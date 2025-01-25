@@ -42,8 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Generar las estrellas activas según el valor de data-stars
         for (let i = 1; i <= stars && i <= maxStars; i++) {
-            const star = document.createElement('span'); // Crear un elemento <span> para cada estrella
-            star.textContent = '⭐'; // Agregar el carácter de estrella
+            const star = document.createElement('img'); // Crear un elemento <img> para cada estrella
+            star.src = '/agencia-viajes/assets/img/icon/star-solid.svg'; // Ruta del archivo SVG de estrella
+            star.alt = 'Estrella'; // Texto alternativo para accesibilidad
+            star.classList.add('rating__star'); // Añadir una clase para estilos adicionales si es necesario
             ratingElement.appendChild(star); // Añadir la estrella al contenedor
         }
     });
